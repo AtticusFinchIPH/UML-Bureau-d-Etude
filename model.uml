@@ -491,6 +491,54 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tOjyhS-nEemgMYOauWrb7g"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tOjyhi-nEemgMYOauWrb7g" value="*"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_RX8gdDUXEem-L8dkjIyMMQ" name="pointPixels" type="_gEYbwC-dEemgMYOauWrb7g" association="_RX8gcDUXEem-L8dkjIyMMQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RX8gdTUXEem-L8dkjIyMMQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RX8gdjUXEem-L8dkjIyMMQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mrv1QDUXEem-L8dkjIyMMQ" name="echelle" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mrwcUDUXEem-L8dkjIyMMQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mrwcUTUXEem-L8dkjIyMMQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_xwEeUDUXEem-L8dkjIyMMQ" name="multx" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwEeUTUXEem-L8dkjIyMMQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwEeUjUXEem-L8dkjIyMMQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0MEmsDUXEem-L8dkjIyMMQ" name="multy" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0MEmsTUXEem-L8dkjIyMMQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0MEmsjUXEem-L8dkjIyMMQ" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_bMdHcDUXEem-L8dkjIyMMQ" name="Map2">
+          <ownedParameter xmi:id="_lsc7cDUXEem-L8dkjIyMMQ" name="chemin">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_lsc7cTUXEem-L8dkjIyMMQ" name="pGPSs" type="_-BovIC-cEemgMYOauWrb7g"/>
+          <ownedParameter xmi:id="_lsdigDUXEem-L8dkjIyMMQ" name="pPixels" type="_gEYbwC-dEemgMYOauWrb7g"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_6AbyADUXEem-L8dkjIyMMQ" name="calculateMat" visibility="private">
+          <ownedParameter xmi:id="_9yPPsDUXEem-L8dkjIyMMQ" name="pgps" type="_-BovIC-cEemgMYOauWrb7g"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__ZI8EDUXEem-L8dkjIyMMQ" name="calculEchelle" visibility="private">
+          <ownedParameter xmi:id="_DCyjUDUYEem-L8dkjIyMMQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_FRCjkDUYEem-L8dkjIyMMQ" name="gpsToPixel">
+          <ownedParameter xmi:id="_J1EIYDUYEem-L8dkjIyMMQ" name="pgps" type="_-BovIC-cEemgMYOauWrb7g"/>
+          <ownedParameter xmi:id="_J1HLsDUYEem-L8dkjIyMMQ" type="_gEYbwC-dEemgMYOauWrb7g" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_KnE0IDUYEem-L8dkjIyMMQ" name="getChemin">
+          <ownedParameter xmi:id="_Mkdt4DUYEem-L8dkjIyMMQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NXMLUDUYEem-L8dkjIyMMQ" name="getEchelle">
+          <ownedParameter xmi:id="_Pspm0DUYEem-L8dkjIyMMQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_Itx9MC-nEemgMYOauWrb7g" name="ViewMap" visibility="public">
         <ownedAttribute xmi:id="_V6fPEC-nEemgMYOauWrb7g" name="modele" visibility="private" type="_GvnnYC-nEemgMYOauWrb7g">
@@ -512,17 +560,47 @@
           </ownedParameter>
         </ownedOperation>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_tOjygC-nEemgMYOauWrb7g" name="pPixels" memberEnd="_tOjygS-nEemgMYOauWrb7g _tOjyhC-nEemgMYOauWrb7g">
+      <packagedElement xmi:type="uml:Association" xmi:id="_tOjygC-nEemgMYOauWrb7g" name="pGPSs" memberEnd="_tOjygS-nEemgMYOauWrb7g _tOjyhC-nEemgMYOauWrb7g">
         <ownedEnd xmi:id="_tOjygS-nEemgMYOauWrb7g" name="map2s" type="_GvnnYC-nEemgMYOauWrb7g" association="_tOjygC-nEemgMYOauWrb7g">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tOjygi-nEemgMYOauWrb7g" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tOjygy-nEemgMYOauWrb7g" value="1"/>
         </ownedEnd>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_RX8gcDUXEem-L8dkjIyMMQ" name="pPixels" memberEnd="_RX8gcTUXEem-L8dkjIyMMQ _RX8gdDUXEem-L8dkjIyMMQ">
+        <ownedEnd xmi:id="_RX8gcTUXEem-L8dkjIyMMQ" name="map2s" type="_GvnnYC-nEemgMYOauWrb7g" association="_RX8gcDUXEem-L8dkjIyMMQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RX8gcjUXEem-L8dkjIyMMQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RX8gczUXEem-L8dkjIyMMQ" value="1"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_ga_6EC-fEemgMYOauWrb7g" name="agentZone">
-      <packagedElement xmi:type="uml:Class" xmi:id="_KV804C-nEemgMYOauWrb7g" name="CercleEnM" visibility="public"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_L6ZqMC-nEemgMYOauWrb7g" name="ViewZone" visibility="public"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_NsvKgC-nEemgMYOauWrb7g" name="ViewMap" visibility="public"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_KV804C-nEemgMYOauWrb7g" name="CercleEnM" visibility="public">
+        <ownedOperation xmi:id="_VeqBsDUYEem-L8dkjIyMMQ" name="CercleEnM">
+          <ownedParameter xmi:id="_e1CiQDUYEem-L8dkjIyMMQ" name="centre" type="_-BovIC-cEemgMYOauWrb7g"/>
+          <ownedParameter xmi:id="_e1CiQTUYEem-L8dkjIyMMQ" name="rayonenm">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_e1CiQjUYEem-L8dkjIyMMQ" name="carte" type="_GvnnYC-nEemgMYOauWrb7g"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_L6ZqMC-nEemgMYOauWrb7g" name="ViewZone" visibility="public">
+        <ownedOperation xmi:id="_3zVL0DUYEem-L8dkjIyMMQ" name="ViewZone">
+          <ownedParameter xmi:id="_7XNiQDUYEem-L8dkjIyMMQ" name="m" type="_NsvKgC-nEemgMYOauWrb7g"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_5VYNYDUYEem-L8dkjIyMMQ" name="getVue"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NsvKgC-nEemgMYOauWrb7g" name="Zone" visibility="public">
+        <ownedOperation xmi:id="_nLTCkDUYEem-L8dkjIyMMQ" name="Zone">
+          <ownedParameter xmi:id="_rrYikDUYEem-L8dkjIyMMQ" name="r" type="_opWwsC-hEemgMYOauWrb7g"/>
+          <ownedParameter xmi:id="_rrYikTUYEem-L8dkjIyMMQ" name="carte" type="_GvnnYC-nEemgMYOauWrb7g"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_thHVIDUYEem-L8dkjIyMMQ" name="createZone">
+          <ownedParameter xmi:id="_wvPeADUYEem-L8dkjIyMMQ" name="r" type="_opWwsC-hEemgMYOauWrb7g"/>
+          <ownedParameter xmi:id="_wvPeATUYEem-L8dkjIyMMQ" name="carte" type="_GvnnYC-nEemgMYOauWrb7g"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ydE40DUYEem-L8dkjIyMMQ" name="getZone"/>
+        <ownedOperation xmi:id="_ztzg4DUYEem-L8dkjIyMMQ" name="getCircles"/>
+      </packagedElement>
     </packagedElement>
   </packagedElement>
 </uml:Model>
