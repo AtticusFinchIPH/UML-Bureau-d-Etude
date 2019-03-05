@@ -14,6 +14,10 @@ Circulation Interlligente est un système qui permet à circuler interligemment 
 
 3. Structure générale du programme
 
+Pourque le robot se circule dans un bâtiment, il faut qu'il identifie sa localisation locale et en même temps, il essaie de collecter les obstacles autour de lui pour les éviter et suivre un bon chemin.
+
+Pour ce but, on décide à déviser le project entre deux grandes parties : une partie de GPS Indoor (reconnaitre la localisation locale) et une autre de Lidar (constater les obtacles autour le robot).
+
 La partie de GPS Indoor contient deux sous-parties:
 
 - Client : (dossier be_v1) qui embarque sur le Raspberry. Son fonctionnement est de récupérer des signaux de réseau wifi en temps réel, puis les transmettre au serveur.
