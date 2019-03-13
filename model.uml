@@ -5,7 +5,7 @@
   </packageImport>
   <packagedElement xmi:type="uml:Package" xmi:id="_vNe7IC-YEemgMYOauWrb7g" name="client_raspberry_indoorGPS">
     <packagedElement xmi:type="uml:Package" xmi:id="_1CoDUD8fEem2v8IDQyC_3A" name="info">
-      <packagedElement xmi:type="uml:Package" xmi:id="_2mkokC-YEemgMYOauWrb7g" name="Distance">
+      <packagedElement xmi:type="uml:Package" xmi:id="_2mkokC-YEemgMYOauWrb7g" name="distance">
         <packagedElement xmi:type="uml:Interface" xmi:id="_6lCCMC-YEemgMYOauWrb7g" name="IDistance" visibility="public">
           <ownedOperation xmi:id="_JwuwUC-ZEemgMYOauWrb7g" name="calculateDistance">
             <ownedParameter xmi:id="_UzKtkC-aEemgMYOauWrb7g" name="monRouteur" type="_OdioQC-aEemgMYOauWrb7g"/>
@@ -71,8 +71,36 @@
             </ownedParameter>
           </ownedOperation>
         </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vXZygEWZEemg_tJxfVeO6Q" name="FormuleB414" visibility="public">
+          <ownedAttribute xmi:id="_vXZygUWZEemg_tJxfVeO6Q" name="erreur" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vXZygkWZEemg_tJxfVeO6Q" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vXZyg0WZEemg_tJxfVeO6Q" value="1"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_vXZyhEWZEemg_tJxfVeO6Q" client="_vXZygEWZEemg_tJxfVeO6Q _vXZygEWZEemg_tJxfVeO6Q" supplier="_6lCCMC-YEemgMYOauWrb7g" contract="_6lCCMC-YEemgMYOauWrb7g"/>
+          <ownedOperation xmi:id="_vXZyhUWZEemg_tJxfVeO6Q" name="distanceB414">
+            <ownedParameter xmi:id="_vXZyhkWZEemg_tJxfVeO6Q" name="monRouteur"/>
+            <ownedParameter xmi:id="_vXZyh0WZEemg_tJxfVeO6Q" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0waekEWZEemg_tJxfVeO6Q" name="FormuleB464" visibility="public">
+          <ownedAttribute xmi:id="_0waekUWZEemg_tJxfVeO6Q" name="erreur" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0waekkWZEemg_tJxfVeO6Q" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0waek0WZEemg_tJxfVeO6Q" value="1"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_0waelEWZEemg_tJxfVeO6Q" client="_0waekEWZEemg_tJxfVeO6Q _0waekEWZEemg_tJxfVeO6Q" supplier="_6lCCMC-YEemgMYOauWrb7g" contract="_6lCCMC-YEemgMYOauWrb7g"/>
+          <ownedOperation xmi:id="_0waelUWZEemg_tJxfVeO6Q" name="distanceB464">
+            <ownedParameter xmi:id="_0waelkWZEemg_tJxfVeO6Q" name="monRouteur"/>
+            <ownedParameter xmi:id="_0wael0WZEemg_tJxfVeO6Q" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_-wgkIC-YEemgMYOauWrb7g" name="Modele">
+      <packagedElement xmi:type="uml:Package" xmi:id="_-wgkIC-YEemgMYOauWrb7g" name="modele">
         <packagedElement xmi:type="uml:Class" xmi:id="_Sm9xMC-ZEemgMYOauWrb7g" name="RouterMetaData" visibility="public">
           <ownedAttribute xmi:id="_YTDKQC-ZEemgMYOauWrb7g" name="bssid" visibility="private">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -263,7 +291,7 @@
         </ownedEnd>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_PmwpUD8gEem2v8IDQyC_3A" name="clientREST">
+    <packagedElement xmi:type="uml:Package" xmi:id="_PmwpUD8gEem2v8IDQyC_3A" name="clientrest">
       <packagedElement xmi:type="uml:Class" xmi:id="_d-GiUD8gEem2v8IDQyC_3A" name="Routeur" visibility="public">
         <ownedAttribute xmi:id="_d-GiUT8gEem2v8IDQyC_3A" name="nom" visibility="private">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -406,6 +434,29 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v197wz8gEem2v8IDQyC_3A" value="1"/>
         </ownedEnd>
       </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nsHacEWcEemg_tJxfVeO6Q" name="App" visibility="public">
+      <ownedAttribute xmi:id="_FLlJJEWdEemg_tJxfVeO6Q" name="client" type="_rz7CoD8gEem2v8IDQyC_3A" association="_FLlJIEWdEemg_tJxfVeO6Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FLlJJUWdEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FLlJJkWdEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_MzVktEWdEemg_tJxfVeO6Q" name="routeurBruts" type="_OdioQC-aEemgMYOauWrb7g" association="_MzVksEWdEemg_tJxfVeO6Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MzVktUWdEemg_tJxfVeO6Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MzVktkWdEemg_tJxfVeO6Q" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_roV_cEWcEemg_tJxfVeO6Q" name="main" isStatic="true"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FLlJIEWdEemg_tJxfVeO6Q" memberEnd="_FLlJIUWdEemg_tJxfVeO6Q _FLlJJEWdEemg_tJxfVeO6Q">
+      <ownedEnd xmi:id="_FLlJIUWdEemg_tJxfVeO6Q" name="apps" type="_nsHacEWcEemg_tJxfVeO6Q" association="_FLlJIEWdEemg_tJxfVeO6Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FLlJIkWdEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FLlJI0WdEemg_tJxfVeO6Q" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MzVksEWdEemg_tJxfVeO6Q" name="reseau" memberEnd="_MzVksUWdEemg_tJxfVeO6Q _MzVktEWdEemg_tJxfVeO6Q">
+      <ownedEnd xmi:id="_MzVksUWdEemg_tJxfVeO6Q" name="apps" type="_nsHacEWcEemg_tJxfVeO6Q" association="_MzVksEWdEemg_tJxfVeO6Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MzVkskWdEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MzVks0WdEemg_tJxfVeO6Q" value="1"/>
+      </ownedEnd>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_3DOykC-cEemgMYOauWrb7g" name="serveur_interface_indoorGPS">
@@ -699,7 +750,7 @@
         <ownedOperation xmi:id="_ztzg4DUYEem-L8dkjIyMMQ" name="getCircles"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_YyLh8D8eEem2v8IDQyC_3A" name="serveurREST">
+    <packagedElement xmi:type="uml:Package" xmi:id="_YyLh8D8eEem2v8IDQyC_3A" name="serveurrest">
       <packagedElement xmi:type="uml:Class" xmi:id="_cKrHwD8eEem2v8IDQyC_3A" name="ReseauResouce" visibility="public">
         <ownedOperation xmi:id="_kmxxYD8eEem2v8IDQyC_3A" name="ReseauResource"/>
         <ownedOperation xmi:id="_oc9_0D8eEem2v8IDQyC_3A" name="getScancomplet">
@@ -818,6 +869,74 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
         </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aZeKkEWaEemg_tJxfVeO6Q" name="App" visibility="public">
+      <ownedAttribute xmi:id="_lpshoEWaEemg_tJxfVeO6Q" name="count" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lptIsEWaEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lptIsUWaEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yHI5wEWaEemg_tJxfVeO6Q" name="chemin" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yHI5wUWaEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yHJg0EWaEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0rDA8EWaEemg_tJxfVeO6Q" name="cheminCSV" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0rDA8UWaEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0rDA8kWaEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_6G6zwEWaEemg_tJxfVeO6Q" name="p1" visibility="package" type="_-BovIC-cEemgMYOauWrb7g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6G6zwUWaEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6G6zwkWaEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_DgUMEEWbEemg_tJxfVeO6Q" name="p3" visibility="package" type="_-BovIC-cEemgMYOauWrb7g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DgUMEUWbEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DgUMEkWbEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_GiLakEWbEemg_tJxfVeO6Q" name="p2" visibility="package" type="_-BovIC-cEemgMYOauWrb7g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GiLakUWbEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GiLakkWbEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_M1l5YEWbEemg_tJxfVeO6Q" name="pp1" visibility="package" type="_gEYbwC-dEemgMYOauWrb7g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M1l5YUWbEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M1l5YkWbEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RFAgIEWbEemg_tJxfVeO6Q" name="pp2" visibility="package" type="_gEYbwC-dEemgMYOauWrb7g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RFAgIUWbEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RFAgIkWbEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_SIrjoEWbEemg_tJxfVeO6Q" name="pp3" visibility="package" type="_gEYbwC-dEemgMYOauWrb7g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SIrjoUWbEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SIrjokWbEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_UB8yYEWbEemg_tJxfVeO6Q" name="vuecarte" visibility="package" type="_Itx9MC-nEemgMYOauWrb7g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UB9ZcEWbEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UB9ZcUWbEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Y5UJ8EWbEemg_tJxfVeO6Q" name="vuezone" visibility="package" type="_L6ZqMC-nEemgMYOauWrb7g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y5UJ8UWbEemg_tJxfVeO6Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y5UJ8kWbEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_bqWuMEWbEemg_tJxfVeO6Q" name="vuelidar" visibility="package" type="_whyQEEWbEemg_tJxfVeO6Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bqXVQEWbEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bqXVQUWbEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_BrhYMEWcEemg_tJxfVeO6Q" name="r" visibility="package" type="_Hc79MC-jEemgMYOauWrb7g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BrhYMUWcEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BrhYMkWcEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KwIMQEWcEemg_tJxfVeO6Q" name="carte" visibility="package" type="_GvnnYC-nEemgMYOauWrb7g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KwIMQUWcEemg_tJxfVeO6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KwIMQkWcEemg_tJxfVeO6Q" value="1"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_c0pzkEWaEemg_tJxfVeO6Q" client="_aZeKkEWaEemg_tJxfVeO6Q" supplier="_VfEfYEWVEemg_tJxfVeO6Q" contract="_VfEfYEWVEemg_tJxfVeO6Q"/>
+      <ownedOperation xmi:id="_OaRiwEWcEemg_tJxfVeO6Q" name="main" isStatic="true"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_uPwjEEWbEemg_tJxfVeO6Q" name="agentlidar">
+      <packagedElement xmi:type="uml:Class" xmi:id="_whyQEEWbEemg_tJxfVeO6Q" name="ViewLidar" visibility="public">
+        <ownedOperation xmi:id="_48qKoEWbEemg_tJxfVeO6Q" name="ViewLidar"/>
       </packagedElement>
     </packagedElement>
   </packagedElement>
