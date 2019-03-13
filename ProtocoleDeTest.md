@@ -23,7 +23,7 @@ La partie de GPS Indoor contient deux sous-parties:
 - Client : (dossier client_raspberry_indoorGPS) qui est embarqué sur le Raspberry. Son role est de récupérer des signaux de réseau wifi en temps réel, puis les transmettre au serveur.
 - Serveur : (dossier serveur_interface_indoorGPS) qui importe sur l'ordinateur. Après avoir reçu les signaux du Raspberry, il analyse, détermine la position actuelle du robot puis l'affiche sur l'écran via une interface d'utilisateur. 
 
-![GPSIndoor Class Diagram](/home/tranv/Documents/BE/UML-BE/GPSIndoor/GPSIndoor Class Diagram.jpg)
+![GPSIndoor Class Diagram](./GPSIndoor Class Diagram.jpg)
 
 
 
