@@ -3,42 +3,8 @@
   <packageImport xmi:id="_X85UEC-ZEemgMYOauWrb7g">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Package" xmi:id="_vNe7IC-YEemgMYOauWrb7g" name="be_v1">
-    <packagedElement xmi:type="uml:Package" xmi:id="_1CoDUD8fEem2v8IDQyC_3A" name="InfoWifi">
-      <packagedElement xmi:type="uml:Package" xmi:id="_j2wzIC-bEemgMYOauWrb7g" name="ScanWifi">
-        <packagedElement xmi:type="uml:Class" xmi:id="_o7FooC-bEemgMYOauWrb7g" name="ScanWifiListen" visibility="public">
-          <ownedAttribute xmi:id="_tamg5C-bEemgMYOauWrb7g" name="mesRouteurs" type="_OdioQC-aEemgMYOauWrb7g" association="_tamg4C-bEemgMYOauWrb7g">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tamg5S-bEemgMYOauWrb7g"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tamg5i-bEemgMYOauWrb7g" value="*"/>
-          </ownedAttribute>
-          <ownedOperation xmi:id="_0cFmoC-bEemgMYOauWrb7g" name="ScanWifiListen">
-            <ownedParameter xmi:id="_5tICcC-bEemgMYOauWrb7g" name="leReseau" type="_OdioQC-aEemgMYOauWrb7g"/>
-          </ownedOperation>
-          <ownedOperation xmi:id="_GFfGQC-cEemgMYOauWrb7g" name="getRouteurFromBssid" visibility="private">
-            <ownedParameter xmi:id="_KLwYEC-cEemgMYOauWrb7g" name="bssid">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-            <ownedParameter xmi:id="_KLwYES-cEemgMYOauWrb7g" type="_OdioQC-aEemgMYOauWrb7g" direction="return"/>
-          </ownedOperation>
-          <ownedOperation xmi:id="_PHui0C-cEemgMYOauWrb7g" name="scanWifiUnique" visibility="private">
-            <ownedParameter xmi:id="_SkpVoC-cEemgMYOauWrb7g" name="monReleve">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_YQWUMC-cEemgMYOauWrb7g" name="printCSV" visibility="private"/>
-          <ownedOperation xmi:id="_shAJ8C-cEemgMYOauWrb7g" name="toString">
-            <ownedParameter xmi:id="_shAJ8S-cEemgMYOauWrb7g" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_tamg4C-bEemgMYOauWrb7g" name="mesRouteurs" memberEnd="_tamg4S-bEemgMYOauWrb7g _tamg5C-bEemgMYOauWrb7g">
-          <ownedEnd xmi:id="_tamg4S-bEemgMYOauWrb7g" name="scanWifiListens" type="_o7FooC-bEemgMYOauWrb7g" association="_tamg4C-bEemgMYOauWrb7g">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tamg4i-bEemgMYOauWrb7g" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tamg4y-bEemgMYOauWrb7g" value="1"/>
-          </ownedEnd>
-        </packagedElement>
-      </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_vNe7IC-YEemgMYOauWrb7g" name="client_raspberry_indoorGPS">
+    <packagedElement xmi:type="uml:Package" xmi:id="_1CoDUD8fEem2v8IDQyC_3A" name="info">
       <packagedElement xmi:type="uml:Package" xmi:id="_2mkokC-YEemgMYOauWrb7g" name="Distance">
         <packagedElement xmi:type="uml:Interface" xmi:id="_6lCCMC-YEemgMYOauWrb7g" name="IDistance" visibility="public">
           <ownedOperation xmi:id="_JwuwUC-ZEemgMYOauWrb7g" name="calculateDistance">
@@ -73,6 +39,36 @@
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZJ_ucS-bEemgMYOauWrb7g" value="1"/>
             </ownedParameter>
             <ownedParameter xmi:id="_XJ-XcS-bEemgMYOauWrb7g" name="monRouteur"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_maWKMEWUEemg_tJxfVeO6Q" name="FormuleB307" visibility="public">
+          <ownedAttribute xmi:id="_qyeBAEWUEemg_tJxfVeO6Q" name="erreur" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qyeBAUWUEemg_tJxfVeO6Q" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qyeBAkWUEemg_tJxfVeO6Q" value="1"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_pgajQEWUEemg_tJxfVeO6Q" client="_maWKMEWUEemg_tJxfVeO6Q" supplier="_6lCCMC-YEemgMYOauWrb7g" contract="_6lCCMC-YEemgMYOauWrb7g"/>
+          <ownedOperation xmi:id="_rR-ngEWUEemg_tJxfVeO6Q" name="distanceB307">
+            <ownedParameter xmi:id="_rR-ngUWUEemg_tJxfVeO6Q" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rR-ngkWUEemg_tJxfVeO6Q" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rR-ng0WUEemg_tJxfVeO6Q" value="1"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_rR-nhEWUEemg_tJxfVeO6Q" name="monRouteur"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_t8_cQEWUEemg_tJxfVeO6Q" name="FormuleB405" visibility="public">
+          <ownedAttribute xmi:id="_wiJgo0WUEemg_tJxfVeO6Q" name="erreur" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wiJgpEWUEemg_tJxfVeO6Q" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wiJgpUWUEemg_tJxfVeO6Q" value="1"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_zBoa0EWUEemg_tJxfVeO6Q" client="_t8_cQEWUEemg_tJxfVeO6Q" supplier="_6lCCMC-YEemgMYOauWrb7g" contract="_6lCCMC-YEemgMYOauWrb7g"/>
+          <ownedOperation xmi:id="_wiJgoEWUEemg_tJxfVeO6Q" name="distanceB405">
+            <ownedParameter xmi:id="_wiJgoUWUEemg_tJxfVeO6Q" name="monRouteur"/>
+            <ownedParameter xmi:id="_wiJgokWUEemg_tJxfVeO6Q" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
           </ownedOperation>
         </packagedElement>
       </packagedElement>
@@ -150,8 +146,8 @@
             </ownedParameter>
           </ownedOperation>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_OdioQC-aEemgMYOauWrb7g" name="Routeur" visibility="public">
-          <generalization xmi:id="_RPlSEC-aEemgMYOauWrb7g" general="_Sm9xMC-ZEemgMYOauWrb7g"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_OdioQC-aEemgMYOauWrb7g" name="RouteurBrut" visibility="public">
+          <generalization xmi:id="_hpjUsEWUEemg_tJxfVeO6Q" general="_Sm9xMC-ZEemgMYOauWrb7g"/>
           <ownedAttribute xmi:id="_b1KJoC-aEemgMYOauWrb7g" name="rssi" visibility="private">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1KJoS-aEemgMYOauWrb7g" value="1"/>
@@ -230,8 +226,44 @@
           </ownedOperation>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_o7FooC-bEemgMYOauWrb7g" name="ScanWifiListen" visibility="public">
+        <ownedAttribute xmi:id="_tamg5C-bEemgMYOauWrb7g" name="mesRouteurs" type="_OdioQC-aEemgMYOauWrb7g">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tamg5S-bEemgMYOauWrb7g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tamg5i-bEemgMYOauWrb7g" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UiMc5EWUEemg_tJxfVeO6Q" name="routeurBruts" type="_OdioQC-aEemgMYOauWrb7g" association="_UiMc4EWUEemg_tJxfVeO6Q">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UiMc5UWUEemg_tJxfVeO6Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UiMc5kWUEemg_tJxfVeO6Q" value="*"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_0cFmoC-bEemgMYOauWrb7g" name="ScanWifiListen">
+          <ownedParameter xmi:id="_5tICcC-bEemgMYOauWrb7g" name="leReseau" type="_OdioQC-aEemgMYOauWrb7g"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_GFfGQC-cEemgMYOauWrb7g" name="getRouteurFromBssid" visibility="private">
+          <ownedParameter xmi:id="_KLwYEC-cEemgMYOauWrb7g" name="bssid">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_KLwYES-cEemgMYOauWrb7g" type="_OdioQC-aEemgMYOauWrb7g" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_PHui0C-cEemgMYOauWrb7g" name="scanWifiUnique" visibility="private">
+          <ownedParameter xmi:id="_SkpVoC-cEemgMYOauWrb7g" name="monReleve">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_YQWUMC-cEemgMYOauWrb7g" name="printCSV" visibility="private"/>
+        <ownedOperation xmi:id="_shAJ8C-cEemgMYOauWrb7g" name="toString">
+          <ownedParameter xmi:id="_shAJ8S-cEemgMYOauWrb7g" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UiMc4EWUEemg_tJxfVeO6Q" memberEnd="_UiMc4UWUEemg_tJxfVeO6Q _UiMc5EWUEemg_tJxfVeO6Q">
+        <ownedEnd xmi:id="_UiMc4UWUEemg_tJxfVeO6Q" name="scanWifiListens" type="_o7FooC-bEemgMYOauWrb7g" association="_UiMc4EWUEemg_tJxfVeO6Q">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UiMc4kWUEemg_tJxfVeO6Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UiMc40WUEemg_tJxfVeO6Q" value="1"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_PmwpUD8gEem2v8IDQyC_3A" name="ClientREST">
+    <packagedElement xmi:type="uml:Package" xmi:id="_PmwpUD8gEem2v8IDQyC_3A" name="clientREST">
       <packagedElement xmi:type="uml:Class" xmi:id="_d-GiUD8gEem2v8IDQyC_3A" name="Routeur" visibility="public">
         <ownedAttribute xmi:id="_d-GiUT8gEem2v8IDQyC_3A" name="nom" visibility="private">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -376,102 +408,8 @@
       </packagedElement>
     </packagedElement>
   </packagedElement>
-  <packagedElement xmi:type="uml:Package" xmi:id="_3DOykC-cEemgMYOauWrb7g" name="IndoorGPS">
-    <packagedElement xmi:type="uml:Class" xmi:id="_-BovIC-cEemgMYOauWrb7g" name="PointGPS" visibility="public">
-      <ownedAttribute xmi:id="_CkAuIC-dEemgMYOauWrb7g" name="lat" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CkAuIS-dEemgMYOauWrb7g" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CkAuIi-dEemgMYOauWrb7g" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_LoJoIC-dEemgMYOauWrb7g" name="lon" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LoJoIS-dEemgMYOauWrb7g" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LoJoIi-dEemgMYOauWrb7g" value="1"/>
-      </ownedAttribute>
-      <ownedOperation xmi:id="_NY_6sC-dEemgMYOauWrb7g" name="PointGPS">
-        <ownedParameter xmi:id="_P-CDQC-dEemgMYOauWrb7g" name="lat">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </ownedParameter>
-        <ownedParameter xmi:id="_P-CDQS-dEemgMYOauWrb7g" name="lon">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </ownedParameter>
-      </ownedOperation>
-      <ownedOperation xmi:id="_SReskC-dEemgMYOauWrb7g" name="setLat">
-        <ownedParameter xmi:id="_VJie0C-dEemgMYOauWrb7g" name="lat">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </ownedParameter>
-      </ownedOperation>
-      <ownedOperation xmi:id="_Vmv_QC-dEemgMYOauWrb7g" name="getLat">
-        <ownedParameter xmi:id="_XHCGQC-dEemgMYOauWrb7g" direction="return">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </ownedParameter>
-      </ownedOperation>
-      <ownedOperation xmi:id="_YiCrsC-dEemgMYOauWrb7g" name="getLon">
-        <ownedParameter xmi:id="_YiCrsS-dEemgMYOauWrb7g" direction="return">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </ownedParameter>
-      </ownedOperation>
-      <ownedOperation xmi:id="_YiCrsi-dEemgMYOauWrb7g" name="setLon">
-        <ownedParameter xmi:id="_YiCrsy-dEemgMYOauWrb7g" name="lon">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </ownedParameter>
-      </ownedOperation>
-      <ownedOperation xmi:id="_a2MfoC-dEemgMYOauWrb7g" name="toString">
-        <ownedParameter xmi:id="_c7A3EC-dEemgMYOauWrb7g" direction="return">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedParameter>
-      </ownedOperation>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_gEYbwC-dEemgMYOauWrb7g" name="PointPixel" visibility="public">
-      <ownedAttribute xmi:id="_gEYbwS-dEemgMYOauWrb7g" name="xPixel" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gEYbwi-dEemgMYOauWrb7g" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gEYbwy-dEemgMYOauWrb7g" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_maMuUC-dEemgMYOauWrb7g" name="yPixel" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_maMuUS-dEemgMYOauWrb7g" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_maMuUi-dEemgMYOauWrb7g" value="1"/>
-      </ownedAttribute>
-      <ownedOperation xmi:id="_gEYbxy-dEemgMYOauWrb7g" name="PointGPS">
-        <ownedParameter xmi:id="_gEYbyC-dEemgMYOauWrb7g" name="xPixel">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </ownedParameter>
-        <ownedParameter xmi:id="_gEYbyS-dEemgMYOauWrb7g" name="yPixel">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </ownedParameter>
-      </ownedOperation>
-      <ownedOperation xmi:id="_gEYbyi-dEemgMYOauWrb7g" name="setXPixel">
-        <ownedParameter xmi:id="_gEYbyy-dEemgMYOauWrb7g" name="xPixel">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </ownedParameter>
-      </ownedOperation>
-      <ownedOperation xmi:id="_gEYbzC-dEemgMYOauWrb7g" name="getXPixel">
-        <ownedParameter xmi:id="_gEYbzS-dEemgMYOauWrb7g" direction="return">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uoPt0C-dEemgMYOauWrb7g" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uoPt0S-dEemgMYOauWrb7g" value="1"/>
-        </ownedParameter>
-      </ownedOperation>
-      <ownedOperation xmi:id="_gEYbzi-dEemgMYOauWrb7g" name="getYPixel">
-        <ownedParameter xmi:id="_gEYbzy-dEemgMYOauWrb7g" direction="return">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v1Jl0C-dEemgMYOauWrb7g" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v1KM4C-dEemgMYOauWrb7g" value="1"/>
-        </ownedParameter>
-      </ownedOperation>
-      <ownedOperation xmi:id="_gEYb0C-dEemgMYOauWrb7g" name="setYPixel">
-        <ownedParameter xmi:id="_gEYb0S-dEemgMYOauWrb7g" name="yPixel">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </ownedParameter>
-      </ownedOperation>
-      <ownedOperation xmi:id="_gEYb0i-dEemgMYOauWrb7g" name="toString">
-        <ownedParameter xmi:id="_gEYb0y-dEemgMYOauWrb7g" direction="return">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedParameter>
-      </ownedOperation>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_4eJb8C-dEemgMYOauWrb7g" name="InfoWifi">
+  <packagedElement xmi:type="uml:Package" xmi:id="_3DOykC-cEemgMYOauWrb7g" name="serveur_interface_indoorGPS">
+    <packagedElement xmi:type="uml:Package" xmi:id="_4eJb8C-dEemgMYOauWrb7g" name="info">
       <packagedElement xmi:type="uml:Class" xmi:id="_oZuEIC-fEemgMYOauWrb7g" name="Routeur" visibility="public">
         <ownedAttribute xmi:id="_tThEoC-fEemgMYOauWrb7g" name="nom" visibility="private">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -639,9 +577,8 @@
         </ownedEnd>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_-MfpYC-eEemgMYOauWrb7g" name="agentMap">
-      <packagedElement xmi:type="uml:Class" xmi:id="_FyTqkC-nEemgMYOauWrb7g" name="Map" visibility="public"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_GvnnYC-nEemgMYOauWrb7g" name="Map2" visibility="public">
+    <packagedElement xmi:type="uml:Package" xmi:id="_-MfpYC-eEemgMYOauWrb7g" name="agentmap">
+      <packagedElement xmi:type="uml:Class" xmi:id="_GvnnYC-nEemgMYOauWrb7g" name="Map" visibility="public">
         <ownedAttribute xmi:id="_rzZcEC-nEemgMYOauWrb7g" name="chemin" visibility="private">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rzZcES-nEemgMYOauWrb7g" value="1"/>
@@ -733,7 +670,7 @@
         </ownedEnd>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_ga_6EC-fEemgMYOauWrb7g" name="agentZone">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ga_6EC-fEemgMYOauWrb7g" name="agentzone">
       <packagedElement xmi:type="uml:Class" xmi:id="_KV804C-nEemgMYOauWrb7g" name="CercleEnM" visibility="public">
         <ownedOperation xmi:id="_VeqBsDUYEem-L8dkjIyMMQ" name="CercleEnM">
           <ownedParameter xmi:id="_e1CiQDUYEem-L8dkjIyMMQ" name="centre" type="_-BovIC-cEemgMYOauWrb7g"/>
@@ -762,7 +699,7 @@
         <ownedOperation xmi:id="_ztzg4DUYEem-L8dkjIyMMQ" name="getCircles"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_YyLh8D8eEem2v8IDQyC_3A" name="clientREST">
+    <packagedElement xmi:type="uml:Package" xmi:id="_YyLh8D8eEem2v8IDQyC_3A" name="serveurREST">
       <packagedElement xmi:type="uml:Class" xmi:id="_cKrHwD8eEem2v8IDQyC_3A" name="ReseauResouce" visibility="public">
         <ownedOperation xmi:id="_kmxxYD8eEem2v8IDQyC_3A" name="ReseauResource"/>
         <ownedOperation xmi:id="_oc9_0D8eEem2v8IDQyC_3A" name="getScancomplet">
@@ -779,6 +716,105 @@
         <ownedOperation xmi:id="_Cs6egD8fEem2v8IDQyC_3A" name="getBaseURI" visibility="private" isStatic="true"/>
         <ownedOperation xmi:id="_GENxgD8fEem2v8IDQyC_3A" name="launch" isStatic="true">
           <ownedParameter xmi:id="_JrdlAD8fEem2v8IDQyC_3A" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_VfEfYEWVEemg_tJxfVeO6Q" name="IobsSynchro" visibility="public">
+        <ownedOperation xmi:id="_du8q4EWVEemg_tJxfVeO6Q" name="donnesAjoutees"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_AJea0EWVEemg_tJxfVeO6Q" name="geometrie">
+      <packagedElement xmi:type="uml:Class" xmi:id="_-BovIC-cEemgMYOauWrb7g" name="PointGPS" visibility="public">
+        <ownedAttribute xmi:id="_CkAuIC-dEemgMYOauWrb7g" name="lat" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CkAuIS-dEemgMYOauWrb7g" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CkAuIi-dEemgMYOauWrb7g" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_LoJoIC-dEemgMYOauWrb7g" name="lon" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LoJoIS-dEemgMYOauWrb7g" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LoJoIi-dEemgMYOauWrb7g" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_NY_6sC-dEemgMYOauWrb7g" name="PointGPS">
+          <ownedParameter xmi:id="_P-CDQC-dEemgMYOauWrb7g" name="lat">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_P-CDQS-dEemgMYOauWrb7g" name="lon">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SReskC-dEemgMYOauWrb7g" name="setLat">
+          <ownedParameter xmi:id="_VJie0C-dEemgMYOauWrb7g" name="lat">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Vmv_QC-dEemgMYOauWrb7g" name="getLat">
+          <ownedParameter xmi:id="_XHCGQC-dEemgMYOauWrb7g" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_YiCrsC-dEemgMYOauWrb7g" name="getLon">
+          <ownedParameter xmi:id="_YiCrsS-dEemgMYOauWrb7g" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_YiCrsi-dEemgMYOauWrb7g" name="setLon">
+          <ownedParameter xmi:id="_YiCrsy-dEemgMYOauWrb7g" name="lon">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_a2MfoC-dEemgMYOauWrb7g" name="toString">
+          <ownedParameter xmi:id="_c7A3EC-dEemgMYOauWrb7g" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_gEYbwC-dEemgMYOauWrb7g" name="PointPixel" visibility="public">
+        <ownedAttribute xmi:id="_gEYbwS-dEemgMYOauWrb7g" name="xPixel" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gEYbwi-dEemgMYOauWrb7g" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gEYbwy-dEemgMYOauWrb7g" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_maMuUC-dEemgMYOauWrb7g" name="yPixel" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_maMuUS-dEemgMYOauWrb7g" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_maMuUi-dEemgMYOauWrb7g" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_gEYbxy-dEemgMYOauWrb7g" name="PointGPS">
+          <ownedParameter xmi:id="_gEYbyC-dEemgMYOauWrb7g" name="xPixel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_gEYbyS-dEemgMYOauWrb7g" name="yPixel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_gEYbyi-dEemgMYOauWrb7g" name="setXPixel">
+          <ownedParameter xmi:id="_gEYbyy-dEemgMYOauWrb7g" name="xPixel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_gEYbzC-dEemgMYOauWrb7g" name="getXPixel">
+          <ownedParameter xmi:id="_gEYbzS-dEemgMYOauWrb7g" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uoPt0C-dEemgMYOauWrb7g" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uoPt0S-dEemgMYOauWrb7g" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_gEYbzi-dEemgMYOauWrb7g" name="getYPixel">
+          <ownedParameter xmi:id="_gEYbzy-dEemgMYOauWrb7g" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v1Jl0C-dEemgMYOauWrb7g" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v1KM4C-dEemgMYOauWrb7g" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_gEYb0C-dEemgMYOauWrb7g" name="setYPixel">
+          <ownedParameter xmi:id="_gEYb0S-dEemgMYOauWrb7g" name="yPixel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_gEYb0i-dEemgMYOauWrb7g" name="toString">
+          <ownedParameter xmi:id="_gEYb0y-dEemgMYOauWrb7g" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
         </ownedOperation>
